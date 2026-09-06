@@ -11,6 +11,7 @@ provider "docker" {}
 
 variable "db_root_password" {
   type = string
+  default = "default_password"
 }
 
 resource "docker_image" "nginx" {
